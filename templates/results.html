@@ -1,0 +1,40 @@
+{% extends "index.html" %}
+{% block main %}
+<section class="content-section bg-primary text-white text-center">
+    <div class="container">
+        <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">RESULTS</h3>
+            <h2 class="mb-5">Year: 
+                <span>{{ predict }}</span>
+            </h2>
+        </div>
+        <h4>Features</h4>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <span class="mx-auto service-icon rounded-circle mb-3">{{gmsl}}</span>
+                <h6 style="--bs-secondary: #ecb807;--bs-secondary-rgb: 236,184,7;">
+                    <strong style="--bs-secondary: #ecb807;--bs-secondary-rgb: 236,184,7;color: #ecb807;">GMSL is the globally averaged sea level and trends</strong>
+                </h6>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <span class="mx-auto service-icon rounded-circle mb-3">{{sd_gmsl}}</span>
+                <h6>
+                    <strong style="color: #ecb807;">Standard Devitation of GMSL</strong>
+                </h6>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <span class="mx-auto service-icon rounded-circle mb-3">{{gia}}</span>
+                <h6 style="color: #ecb807;">
+                    <strong>The ice sheets melted long ago, but the land underneath is still rebounding as a result of the removal of that burden. This ongoing movement of land is known as GIA.</strong>
+                </h6>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <span class="mx-auto service-icon rounded-circle mb-3">{{sd_gia}}</span>
+                <h6>
+                    <strong style="color: #ecb807;">Standard Devitation of GIA</strong>
+                </h6>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
